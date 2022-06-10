@@ -6,4 +6,4 @@ Kod çalışınca, sepete ekleme düğmesine basılınca ekleme işlemi yapılı
 Sağ üstte yer alan sepet düğmesine tıklanınca sepet ekranına geçiliyor. Sepete eklenenler görünüyor.
 Sepetten çıkarma düğmesine basılınca ise sepetten çıkıyorlar.
 
-01.png  02.png  03.png
+https://github.com/VedatBiner/flutter_bloc_sample/blob/master/01.png https://github.com/VedatBiner/flutter_bloc_sample/blob/master/02.png  https://github.com/VedatBiner/flutter_bloc_sample/blob/master/03.png
