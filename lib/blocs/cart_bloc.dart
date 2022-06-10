@@ -3,6 +3,8 @@ import '../data/cart_service.dart';
 import '../models/cart.dart';
 
 class CartBloc{
+  // Çalışma anında bu değer oluşuyor. Daha sonra bu değer değiştirilemiyor.
+  // referansın içindeki değer değiştirilebiliyor.
   final cartStreamController = StreamController.broadcast();
 
   // getter
@@ -10,6 +12,8 @@ class CartBloc{
 
   void addToCart(Cart item){
     CartService.addToCart(item);
+    // bu event 'i kullanan yerlerin build operasyonunu sink ile çalıştırıyoruz.
+    // sink ile stream uyandırılıyor.
     cartStreamController.sink.add(CartService.getCart());
   }
 
@@ -18,7 +22,8 @@ class CartBloc{
     cartStreamController.sink.add(CartService.getCart());
   }
 
-  List<Cart> getAll(){
+  // Tüm sepeti döndürüyor.
+  List<Cart> getCart(){
     return CartService.getCart();
   }
 }

@@ -3,6 +3,6 @@ class Product {
   String name;
   double price;
 
-  // Constructor
+  // Constructor oluşturalım.
   Product(this.id, this.name, this.price);
 }
